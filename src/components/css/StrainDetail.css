@@ -1,0 +1,22 @@
+
+.strain-card {
+  margin: 0.5em
+}
+
+.strain-row {
+  margin-bottom: 0.3em;
+}
+
+.strain-row h2 {
+  font-size: 1.7em;
+  margin-bottom: 0.1em;
+}
+
+.strain-row ul{
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.strain-description {
+  margin-top: 1.2em;
+}

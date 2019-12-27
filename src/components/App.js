@@ -7,11 +7,17 @@ import Home from './Home';
 import LoginPage from './LoginPage'
 import RegisterPage from './RegisterPage'
 import UserAccount from './UserAccount';
+import StrainDetail from './StrainDetail';
+import BreederDetail from './BreederDetail'
 import './css/App.css';
 import Notify from './Notify'
-
+import Search from './Search'
 
 class App extends React.Component {
+  state = {
+    "loggedIn": (JSON.parse(localStorage.getItem('user'))),
+    "user": JSON.parse(localStorage.getItem('user'))
+  }  
   constructor(props) {
     super(props);
     const { dispatch } = this.props;
@@ -31,10 +37,13 @@ class App extends React.Component {
       <div className="accounts-app">
         <Router history={ history }>
           <Switch>
-            <Route exact path="/" component={Home} page="home" />
-            <Route path="/login" component={LoginPage} />
-            <Route path="/register" component={RegisterPage} />
-            <Route path="/user-account" component={UserAccount} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/login" component={LoginPage} />
+            <Route exact path="/register" component={RegisterPage} />
+            <Route exact path="/user-account" component={UserAccount} />
+            <Route exact path="/strain/:strain/:breeder" component={StrainDetail} />
+            <Route exact path="/breeder/:breeder" component={BreederDetail} />
+            <Route path="/search" component={Search} />} />
           </Switch>
         </Router>
       </div>
