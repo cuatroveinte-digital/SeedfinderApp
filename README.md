@@ -26,7 +26,7 @@ The npm modules (or packages) used are:
 * [react-dom (16.8.6)](https://reactjs.org/docs/react-dom.html)
 * [react-redux (7.0.2)](https://react-redux.js.org/)
 * [react-router-dom (5.0.0)](https://www.npmjs.com/package/react-router-dom)
-* [react-scripts (3.0.0)](https://www.npmjs.com/package/react-scripts)
+* [react-scripts (3.3.0)](https://www.npmjs.com/package/react-scripts)
 * [redux (4.0.1)](https://redux.js.org/)
 * [redux-logger (3.0.6)](https://www.npmjs.com/package/redux-logger)
 * [redux-thunk (2.3.0)](https://www.npmjs.com/package/redux-thunk)
